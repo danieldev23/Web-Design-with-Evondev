@@ -1,0 +1,211 @@
+/* Import font từ Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500&family=Rubik&display=swap");
+
+/* Áp dụng kiểu chữ và box-sizing cho tất cả các phần tử */
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Thiết lập kiểu chữ và kích thước chữ cho phần nội dung chính của trang */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+/* Thiết lập kích thước cơ bản cho font chữ của trang là 62.5% để dễ tính toán em và rem */
+html {
+  font-size: 62.5%;
+}
+
+/* Thiết lập màu chữ cho các đoạn văn bản */
+p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Thiết lập kiểu cho container có nền màu */
+.background {
+  width: 100%;
+  height: 100px;
+  min-height: 100px;
+  background-color: #2979ff;
+  max-width: 50%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Thiết lập kiểu cho container có hình nền toàn màn hình */
+.background2 {
+  width: 100vw;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Thiết lập kiểu cho phần tử với đơn vị 'em' */
+.em {
+  width: 10em;
+  height: 10em;
+  font-size: 32px;
+  background-color: #ffa400;
+  text-align: center;
+}
+
+/* Thiết lập kiểu cho phần tử với đơn vị 'rem' */
+.rem {
+  width: 10rem;
+  max-height: 219px;
+  font-size: 32px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: #ff7878;
+  text-align: center;
+}
+
+/* Thiết lập kiểu cho phần tử có margin */
+.margin {
+  width: 14rem;
+  height: 14rem;
+  background-color: #ff7878;
+  margin-bottom: 70px;
+}
+
+/* Thiết lập kiểu cho phần tử có margin và margin âm */
+.margin2 {
+  margin-top: -100px;
+  margin-left: 150px;
+}
+
+/* Thiết lập kiểu cho phần tử có padding */
+.padding {
+  width: 24rem;
+  height: 24rem;
+  padding: auto;
+  background-color: #39d082;
+  padding-bottom: 70px;
+  margin-left: 50px;
+}
+
+/* Thiết lập kiểu cho hộp có 'box-sizing' là 'border-box' */
+.box {
+  width: 10rem;
+  height: 10rem;
+  border: 5px solid #39d082;
+  padding: 1rem;
+  background-color: #ff7878;
+  box-sizing: border-box;
+}
+
+/* Thiết lập kiểu cho đường link */
+a {
+  width: 10rem;
+  color: #000000;
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #24b869;
+  text-decoration: none;
+}
+
+/* Thiết lập kiểu cho văn bản */
+.font {
+  line-height: 1.3;
+  text-align: justify;
+  word-break: break-word;
+}
+
+/* Thiết lập kiểu cho hình ảnh */
+img {
+  display: block;
+  width: 50rem;
+  height: 50rem;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Thiết lập kiểu cho pseudo-class */
+.psuedo {
+  color: #ff7878;
+}
+
+.psuedo:hover {
+  color: #24b869;
+}
+
+.psuedo:active {
+  color: #2979ff;
+}
+
+.psuedo:visited {
+  color: orange;
+}
+
+/* Thiết lập kiểu cho hộp gradient */
+.boxed {
+  width: 20rem;
+  height: 20rem;
+  background-image: linear-gradient(to right, #00aefd, #ffa400);
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+/* Thiết lập kiểu chữ cho tiêu đề với font Montserrat */
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  font-weight: 900;
+  font-size: 4rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-shadow: 10px 0px 0 rgb(38, 130, 137);
+}
+
+/* Thiết lập kiểu chữ bổ sung với hỗ trợ cho 'background-clip' */
+@supports (-webkit-background-clip: text) {
+  .title {
+    background-image: linear-gradient(75deg, #ff4969, #fc9d44 80%);
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+.background3 {
+  /* Set chiều rộng và chiều cao của phần tử là 100% của chiều rộng và chiều cao của viewport */
+  width: 100vw;
+  height: 100vh;
+
+  /* Đặt hình nền sử dụng linear gradient và URL của hình ảnh */
+  background-image: linear-gradient(
+      to right,
+      rgba(247, 140, 160, 0.919) 0%,
+      rgba(250, 117, 144, 0.895) 19%,
+      rgba(252, 135, 141, 0.922) 60%,
+      rgba(254, 154, 139, 0.893)
+    ),
+    url(https://images.unsplash.com/photo-1531884070720-875c7622d4c6?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+  /* Ngăn chặn hình nền lặp lại */
+  background-repeat: no-repeat;
+
+  /* Căn giữa hình nền */
+  background-position: center;
+
+  /* Bảo toàn tỷ lệ khung của hình ảnh và che phủ toàn bộ phần nền */
+  object-fit: cover;
+}
+
+.box-shadow {
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+  background-color: #00aefd;
+  /* box-shadow: x y blur scale color; */
+  box-shadow: 5px 5px 10px 15px orange;
+}

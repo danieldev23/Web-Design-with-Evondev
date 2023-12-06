@@ -1,0 +1,15 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(247, 140, 160, 0.919) 0%,
+      rgba(250, 117, 144, 0.895) 19%,
+      rgba(252, 135, 141, 0.922) 60%,
+      rgba(254, 154, 139, 0.893)
+    ),
+    url(https://images.unsplash.com/photo-1531884070720-875c7622d4c6?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
