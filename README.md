@@ -115,3 +115,36 @@ Ví dụ:
 **px, rem, em, %, vh, vw,...**
 
 **100% = 16px**
+
+Sự khác nhau giữa em và rem:
+
+**em** là đơn vị phụ thuộc vào thuộc tính font-size của chính nó hoặc phần tử chứa nó
+
+còn
+
+**rem**
+là đơn vị phụ thuộc vào thuộc tính font-size của thẻ html
+
+`vw` là đơn vị dành cho Background nếu muốn nó phủ toàn màn hình theo lớp cha của nó
+
+và ngược lại thì
+
+`vh` cũng vậy, `vh` cũng là đơn vị giống như `vw`
+
+```css
+.em {
+  width: 10em;
+  height: 10em;
+  font-size: 32px;
+  background-color: #ffa400;
+  text-align: center;
+}
+.rem {
+  width: 10rem;
+  max-height: 219px;
+  font-size: 32px;
+  border: 2px solid black;
+}
+```
+
+### **IV. Các thuộc tính về Backgound trong css**
