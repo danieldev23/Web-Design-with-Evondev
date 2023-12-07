@@ -147,4 +147,29 @@ và ngược lại thì
 }
 ```
 
+thêm nữa tạo Scroll cho item khi nó vượt quá kích thước bằng cách sử dụng các thuộc tính:
+
+```css
+overflow: hidden; /* ẩn khi nó vượt quá kích thước */
+overflow-x: hidden;
+overflow-x: auto;
+overflow-y: hidden;
+overflow-y: auto;
+```
+
 ### **IV. Các thuộc tính về Backgound trong css**
+
+Sử dụng **background** là hình ảnh với thuộc tính
+
+```css
+background-image: url(url_image);
+width: 100vw;
+height: 100vh;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: center center; /* set vị trí hình ảnh*/
+/*Ví dụ muốn lấy ảnh ở vị trị giữa thì
+    background-position: center center;
+    */
+```
