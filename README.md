@@ -169,6 +169,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
 background-position: center center; /* set vị trí hình ảnh*/
+/* background: url("https://images.unsplash.com/photo-1514539079130-25950c84af65?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center / cover fixed; */
 /*Ví dụ muốn lấy ảnh ở vị trị giữa thì
     background-position: center center;
     */
