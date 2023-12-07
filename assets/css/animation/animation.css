@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+.boxed {
+  width: 5rem;
+  height: 5rem;
+  background: #12c2e9;
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: move 2s alternate infinite;
+}
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20rem);
+  }
+}
+.fade-loading {
+  width: 5rem;
+  height: 5rem;
+  background-color: #e116bf;
+  margin: 5rem auto;
+  border-radius: 50%;
+  position: relative;
+
+  /* transform: scale(1.7);
+  opacity: 1; */
+}
+.fade-loading::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  border-radius: 50%;
+  animation: fade 1s forwards infinite linear;
+}
+@keyframes fade {
+  /* from {
+    transform: scale(1);
+    opacity: 1;
+  } */
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.circles {
+  text-align: center;
+  margin: 5rem;
+  animation: circle-loading 1s infinite;
+  /* transform: rotate(180deg); */
+  /* transform: rotate(200deg);
+  transform: rotate(160deg); */
+}
+@keyframes circle-loading {
+  50% {
+    transform: rotate(200deg);
+  }
+  75% {
+    transform: rotate(160deg);
+  }
+  100% {
+    transform: rotate(200deg);
+  }
+}
+.circle-item {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  border: 3px solid violet;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+.circle-item:first-child {
+  border-color: rgb(84, 218, 218);
+}
